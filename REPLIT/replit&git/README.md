@@ -73,3 +73,56 @@ git status - идеальная команда, для того что бы по
     no changes added to commit (use "git add" and/or "git commit -a")
 В часности речь про то, в файле 1.1.-introduction-html-css/index.html были внесенны изменения
 ##### 3.2.2 В репозитории произошли изменения, добавились новые файлы
+    On branch main
+    Your branch is up to date with 'origin/main'.
+    Untracked files:
+        (use "git add <file>..." to include in what will be committed)
+        .replit
+        1.1.-introduction-html-css/index.html
+        index.html
+        replit.nix
+    nothing added to commit but untracked files present (use "git add" to track)
+Тут речь про то, что в репозотории появились новые файлы. Они могли быть добавленны при написании кода, либо само приложение их добавляет автамотически. Как избавится от файлов приложения в отдельной статье. Остальные файлы могут быть созданны кодом либо самим приложением (например отчет о работе, логи и тп.) Для начала просто их добавим в репозиторий. Новые файлы отмеченны красным цветом.
+##### 3.2.3 Разрешаем внести все изменения.
+git add -A - команда для разрешения всех изменений. Для случаев когда нужно внести только отдельные измененя команда git add <имя файла>. В ответ просто shel перейдет на новую строку, без каких либо сообщений.
+##### 3.2.4 Нужно сделать commit.
+На git add все не заканчивается. Так как на git push выпадет очередное сообщение
+        Everything up-to-date
+А git status выдаст
+    On branch main
+    Your branch is up to date with 'origin/main'.
+    Changes to be committed:
+        (use "git restore --staged <file>..." to unstage)
+    modified:   1.1.-introduction-html-css/index.html
+  Измененный файл будет подсвечен зелёным цветом.
+И то и другое говорит о том, что надо сделать commit. Для этого нужно ввести команду git commit.
+В результате команды должен открыться редактор в котором нужно набрать свои комментарии к изменениям. Вид приблизительно такой:
+        # Please enter the commit message for your changes. Lines starting
+        # with '#' will be ignored, and an empty message aborts the commit.
+        #
+        # On branch main
+        # Your branch is up to date with 'origin/main'.
+        #
+        # Changes to be committed:
+        #	modified:   1.1.-introduction-html-css/index.html
+        #
+Теперь ВНИМАНИЕ! Обязательно нужно что то написать иначе после закрытия редактора git выдаст сообщение об ошибке и не даст сделать git push. Сообщение такое:
+        Aborting commit due to empty commit message.
+Поэтому нужно обязательно написать, хоть что то. При этом нельзя начинать свое сообщение со знака #, так как git его не воспринимает в качестве комментария. Поэтому в качестве рекомендации, можно написать например [1234 или имя] бла-бла. Где цифры (или имя) это заголовок, а далее текст комментария. Так же важно помнить, что когда репозиторий загрузиться на основное хранилище, то комментарий станет виден для всех. Поэтому без мата и других излишеств.
+
+После написания нужно просто закрыть редактор и git выведет сообщение:
+        [main e0908f0] [my] Скоро начнем добавлять много файлов
+        1 file changed, 1 insertion(+), 1 deletion(-)
+Это значит, что комментарий принят и добавлен, репозиторий готов к отправке. Теперь можно командовать git push, и наблюдать это сообщение:
+    Enumerating objects: 7, done.
+    Counting objects: 100% (7/7), done.
+    Delta compression using up to 8 threads
+    Compressing objects: 100% (4/4), done.
+    Writing objects: 100% (4/4), 456 bytes | 456.00 KiB/s, done.
+    Total 4 (delta 2), reused 0 (delta 0)
+    remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+    To https://github.com/Dmitry-A-K/netology_homework_html-css-javascript
+    ae8377f..e0908f0  main -> main
+    
+##### 3.3 Магия синхронизации
+    
