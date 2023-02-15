@@ -15,10 +15,12 @@ VCS позволяют нескольким разработчикам рабо�
 <br><br><br><br><br><br><i> 
 взято из статьи в которой более менее доходчиво опысывается принцип работы git. 
   
-<a href="https://struchkov.dev/blog/git-how-to-commit/" target="_blank">статьи часть1</a>
 
-<a href="https://struchkov.dev/blog/git-branches-merge-rebase/" target="_blank">статьи часть2 </a>
+  
+<a href="https://struchkov.dev/blog/git-how-to-commit/">статьи часть1</a>
+
+<a href="https://struchkov.dev/blog/git-branches-merge-rebase/">статьи часть2 </a>
   
 Это целый сайт с описанием git, много всего заумного и для большинсива наверное не актуального.
 
-<a href="https://git-scm.com/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9E-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B5-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9#" target="_blank">книга о git</a>
+<a href="https://git-scm.com/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9E-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B5-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9#">книга о git</a>
