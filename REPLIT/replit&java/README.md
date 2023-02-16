@@ -5,11 +5,11 @@
   2. Создаем новый файл для примера Assignment.java (рус Задание)
   3. В файле создаем публичный класс:  
   
-      ublic class Assignment {
-        public static void main(String[] args) {
-        System.out.println("Hello my frends!");
-        }
-      }  
+      ublic class Assignment {  
+        public static void main(String[] args) {  
+        System.out.println("Hello my frends!");  
+        }  
+      }    
       
   4.  Далее на панели Tools (Replit) открываем Console (>_)
       4.1   В консоле можем ввести команду "dir", которая покажет все файлы в каталоге. Команду можно сейчас пропустить.
