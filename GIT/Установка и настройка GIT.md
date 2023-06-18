@@ -22,18 +22,18 @@
 >  git config --global user.email "почта пользователя"
 6.  Задать правильный формат строк
    
-Если macOS или Linux, последовательно выполнить две команды: 
->  git config --global core.autocrlf input
-> 
->  git config --global core.safecrlf warn
+*   Если macOS или Linux, последовательно выполнить две команды: 
+      >  git config --global core.autocrlf input
+      > 
+      >  git config --global core.safecrlf warn
 
-Если Windows, то выполнить последовательно эти команды: 
->  git config --global core.autocrlf true
-> 
->  git config --global core.safecrlf warn
+*   Если Windows, то выполнить последовательно эти команды: 
+      >git config --global core.autocrlf true
+      > 
+      >git config --global core.safecrlf warn
 
-Дальше общая для всех операционных систем команда, которая позволит избежать нечитаемых строк в неправильной кодировке:
->  git config --global core.quotepath off
+*   Дальше общая для всех операционных систем команда, которая позволит избежать нечитаемых строк в неправильной кодировке:
+      >  git config --global core.quotepath off
 
 7. Настрока имени ветки
 >  git config --global init.defaultBranch main
